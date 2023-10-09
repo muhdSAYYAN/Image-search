@@ -1,0 +1,118 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popins',sans-serif;
+   
+
+}
+
+body{
+    line-height: 1.6;
+    height: 100vh;
+    background-image: linear-gradient(orange,red);
+}
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0 60px 0;
+    color: white;
+
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+#inp-search{
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 6px gray;
+    border-radius: 5px;
+    font-size: 18px;
+    color: rgb(68, 65, 65);
+    
+}
+#Search-btn{
+    padding: 10px 20px;
+    background-color: aquamarine;
+    color: rgb(223, 144, 144);
+    border: none;
+    font-size: 18px;
+    box-shadow: 0 0 6px gray;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    /* overflow-y: scroll; */
+    margin: 0 auto;
+}
+.img-dv{
+    margin-bottom: 60px;
+    width: 30%;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px gray;
+    overflow: hidden;
+    background-color: white;
+
+}
+.img-dv img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+.img-dv:hover img{
+    opacity:0.8;
+}
+.img-dv a{
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(27, 25, 25);
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+}
+#showm{
+    background-color: rgb(9, 116, 216);
+    font-size: 18px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    display:block;
+    margin: 30px auto;
+    cursor: pointer;
+    display:none;
+}
+
+@media screen and (max-width : 768px) {
+     .main{
+        padding: 20px;
+
+     }
+     .img-dv{
+        width: 45%;
+     }
+}
+
+@media screen and (max-width : 480px) {
+    
+    .img-dv{
+       width: 100%;
+    }
+}
+
+    
